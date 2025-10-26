@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;   /* центрує горизонтально */
+    align-items: center;       /* центрує вертикально */
+    min-height: 100vh;         /* висота всього екрану */
+    background: #f5f5f5;
+}
+
+.container {
+    width: 60%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+}
+
+/* Верхній блок */
+header {
+    background: #66d9ff; /* блакитний */
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Середня частина */
+.row {
+    display: flex;
+    flex: 1;
+    height: 400px;
+}
+
+.left, .center, .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Кольори колонок */
+.left {
+    background: #99ffcc; /* зелений */
+}
+
+.center {
+    background: #ffff99; /* жовтий */
+}
+
+.right {
+    background: #ff99ff; /* рожевий */
+}
+
+/* Нижній блок */
+footer {
+    background: #ffe0b3; /* кремовий */
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+

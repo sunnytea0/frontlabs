@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f5f5;
+    flex-direction: column;
+}
+
+a {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #007acc;
+    text-decoration: none;
+}
+
+/* Контейнер сітки */
+.container {
+    width: 60%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 1fr 80px; /* зменшили висоту заголовка і футера */
+    grid-template-areas:
+        "header header header"
+        "left center right"
+        "footer footer footer";
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+/* Верхній блок */
+header {
+    grid-area: header;
+    background: #66d9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Середня частина */
+.left, .center, .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.left {
+    grid-area: left;
+    background: #99ffcc;
+}
+
+.center {
+    grid-area: center;
+    background: #ffff99;
+}
+
+.right {
+    grid-area: right;
+    background: #ff99ff;
+}
+
+/* Нижній блок */
+footer {
+    grid-area: footer;
+    background: #ffe0b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
