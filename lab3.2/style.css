@@ -11,44 +11,35 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #f5f5f5;
-    flex-direction: column;
 }
 
-a {
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #007acc;
-    text-decoration: none;
-}
-
-/* Контейнер сітки */
+/* Контейнер */
 .container {
     width: 60%;
-    height: 600px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80px 1fr 80px; /* зменшили висоту заголовка і футера */
-    grid-template-areas:
-        "header header header"
-        "left center right"
-        "footer footer footer";
+    background: #fff;
     border: 1px solid #ccc;
-    overflow: hidden;
 }
 
 /* Верхній блок */
 header {
-    grid-area: header;
+    width: 100%;
     background: #66d9ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding: 20px;
     font-weight: bold;
-    font-size: 20px;
 }
 
-/* Середня частина */
+
+.row {
+    width: 100%;
+    overflow: hidden; 
+}
+
+/* Колонки */
 .left, .center, .right {
+    float: left;
+    width: 33.33%;
+    height: 450px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,28 +47,17 @@ header {
     font-size: 20px;
 }
 
-.left {
-    grid-area: left;
-    background: #99ffcc;
-}
 
-.center {
-    grid-area: center;
-    background: #ffff99;
-}
-
-.right {
-    grid-area: right;
-    background: #ff99ff;
-}
+.left { background: #99ffcc; }
+.center { background: #ffff99; }
+.right { background: #ff99ff; }
 
 /* Нижній блок */
 footer {
-    grid-area: footer;
+    clear: both;
+    width: 100%;
     background: #ffe0b3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding: 20px;
     font-weight: bold;
-    font-size: 20px;
 }
