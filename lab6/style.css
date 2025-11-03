@@ -1,0 +1,70 @@
+body {
+  font-family: "Times New Roman", serif;
+  background-color: #ffe6ff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  color: #4b004b;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #b84dff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9c3de0;
+}
+
+#status {
+  margin: 15px;
+  font-weight: bold;
+  color: green;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.user-card {
+  background: white;
+  width: 230px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+}
+
+.user-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.user-card b {
+  color: #4b004b;
+}
+
+
