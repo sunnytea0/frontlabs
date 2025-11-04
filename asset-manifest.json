@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/%3Cfrontlabs%3E/lab7/static/css/main.57e95d43.css",
+    "main.js": "/%3Cfrontlabs%3E/lab7/static/js/main.b8bfe04a.js",
+    "static/media/lovebrain.jpg": "/%3Cfrontlabs%3E/lab7/static/media/lovebrain.61900e45b108fe57af29.jpg",
+    "static/media/booklovers.jpg": "/%3Cfrontlabs%3E/lab7/static/media/booklovers.73573f553529fb83c777.jpg",
+    "static/media/NN.png": "/%3Cfrontlabs%3E/lab7/static/media/NN.88115001d7c86f393da5.png",
+    "static/media/narnia.jpg": "/%3Cfrontlabs%3E/lab7/static/media/narnia.1b83ff984f444626b379.jpg",
+    "static/media/lovehypothesis.jpg": "/%3Cfrontlabs%3E/lab7/static/media/lovehypothesis.1e36a5ce8e26c083155b.jpg",
+    "static/media/cruelprince.jpg": "/%3Cfrontlabs%3E/lab7/static/media/cruelprince.3ae92f5ef8dd0abcbd83.jpg",
+    "static/media/harrypotter.jpg": "/%3Cfrontlabs%3E/lab7/static/media/harrypotter.0a03fec11f2d6d921be9.jpg",
+    "index.html": "/%3Cfrontlabs%3E/lab7/index.html",
+    "main.57e95d43.css.map": "/%3Cfrontlabs%3E/lab7/static/css/main.57e95d43.css.map",
+    "main.b8bfe04a.js.map": "/%3Cfrontlabs%3E/lab7/static/js/main.b8bfe04a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57e95d43.css",
+    "static/js/main.b8bfe04a.js"
+  ]
+}
