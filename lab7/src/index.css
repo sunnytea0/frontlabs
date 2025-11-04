@@ -1,0 +1,102 @@
+body {
+  font-family: "Times New Roman", serif;
+  background-color: #ffe6ff;
+  color: #000;
+  margin: 20px;
+  text-align: left; /* усе текстом вліво */
+}
+
+/* Контейнер центрує контент по ширині сторінки */
+.container {
+  width: 70%;
+  max-width: 900px;
+  margin-top: -40px;
+  margin-left: -40px;
+  background-color: #ffe6ff;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+/* Вирівнюємо текст у всіх блоках ліворуч */
+h2, h3, p, ul, ol {
+  text-align: left;
+}
+
+/* Додаємо відступи між списками */
+ul, ol {
+  margin-left: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* Головне фото + додані фото */
+img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  margin-top: 10px;
+}
+
+#image-container {
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+/* Кнопки під фото – центровані */
+.buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Стиль кнопок */
+button {
+  margin: 5px;
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #d8a7ff;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #c38fff;
+}
+/* ===== Галерея товарів ===== */
+.goods-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.goods-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.goods-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.goods-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.goods-name {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.goods-price {
+  font-weight: bold;
+  color: #5a0085;
+}
