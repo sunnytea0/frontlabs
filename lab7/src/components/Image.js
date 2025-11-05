@@ -24,7 +24,7 @@ function Image() {
 
   return (
     <>
-      {/* 📸 ГОЛОВНЕ ФОТО + 🖼️ ДОДАНІ ФОТО */}
+     
       <div
         id="image-container"
         style={{
@@ -33,10 +33,10 @@ function Image() {
           gap: "20px",
           marginLeft: "60px",
           marginTop: "10px",
-          flexWrap: "wrap"          // 🔹 щоб переносились при нестачі місця
+          flexWrap: "wrap"         
         }}
       >
-        {/* головне фото */}
+       
         <a
           href="https://serviceazur.com/ua/info/cities/nice/"
           target="_blank"
@@ -54,7 +54,7 @@ function Image() {
           />
         </a>
 
-        {/* нові фото праворуч */}
+        
         {images.map(img => (
           <img
             key={img.id}
@@ -70,7 +70,7 @@ function Image() {
         ))}
       </div>
 
-      {/* 🔘 кнопки знизу */}
+      
       <div className="buttons" style={{ textAlign: "center", marginTop: "15px" }}>
         <button onClick={addImage}>Додати зображення</button>
         <button onClick={increaseAll}>Збільшити</button>
