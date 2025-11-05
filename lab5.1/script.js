@@ -1,7 +1,7 @@
 document.getElementById("checkBtn").addEventListener("click", validate);
 document.getElementById("clearBtn").addEventListener("click", clearForm);
 
-// === Регулярні вирази ===
+
 const regex = {
   pib: /^[А-ЯЇІЄҐA-Z][а-яїієґa-z'’\-]+ [А-ЯЇІЄҐA-Z]\.[А-ЯЇІЄҐA-Z]\.$/u,
   phone: /^\(\d{3}\)-\d{3}-\d{2}-\d{2}$/,
@@ -10,7 +10,7 @@ const regex = {
   dob: /^\d{2}\.\d{2}\.\d{4}$/
 };
 
-// === Тексти підказок ===
+
 const helpText = {
   pib: "Формат має бути: Прізвище І.П. (наприклад: Шевченко Т.Г.)",
   phone: "Формат має бути: (ЦЦЦ)-ЦЦЦ-ЦЦ-ЦЦ",
@@ -19,7 +19,7 @@ const helpText = {
   dob: "Формат має бути: ЦЦ.ЦЦ.ЦЦЦЦ"
 };
 
-// === Перевірка ===
+
 function validate() {
   const fields = ["pib", "phone", "idcard", "faculty", "dob"];
   let valid = true;
@@ -32,7 +32,7 @@ function validate() {
     const ok = f === "dob" ? checkDate(val) : regex[f].test(val);
 
     el.classList.remove("error", "valid");
-    hint.textContent = ""; // очищаємо попередній текст
+    hint.textContent = ""; 
 
     if (ok) {
       el.classList.add("valid");
@@ -47,7 +47,7 @@ function validate() {
   if (valid) showResult(data);
 }
 
-// === Перевірка дати ===
+
 function checkDate(str) {
   if (!regex.dob.test(str)) return false;
   const [d, m, y] = str.split(".").map(Number);
@@ -55,7 +55,7 @@ function checkDate(str) {
   return date.getFullYear() === y && date.getMonth() === m - 1 && date.getDate() === d;
 }
 
-// === Виведення результату ===
+
 function showResult(data) {
   const win = window.open("", "result", "width=400,height=400");
   win.document.write(`
@@ -68,7 +68,7 @@ function showResult(data) {
   `);
 }
 
-// === Очищення ===
+
 function clearForm() {
   document.querySelectorAll("input").forEach(i => {
     i.value = "";
