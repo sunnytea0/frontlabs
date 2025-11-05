@@ -3,10 +3,10 @@ body {
   background-color: #ffe6ff;
   color: #000;
   margin: 20px;
-  text-align: left; /* усе текстом вліво */
+  text-align: left; 
 }
 
-/* Контейнер центрує контент по ширині сторінки */
+
 .container {
   width: 70%;
   max-width: 900px;
@@ -17,19 +17,16 @@ body {
   box-sizing: border-box;
 }
 
-/* Вирівнюємо текст у всіх блоках ліворуч */
 h2, h3, p, ul, ol {
   text-align: left;
 }
 
-/* Додаємо відступи між списками */
 ul, ol {
   margin-left: 40px;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
-/* Головне фото + додані фото */
 img {
   width: 300px;
   border-radius: 10px;
@@ -43,13 +40,11 @@ img {
   margin-top: 10px;
 }
 
-/* Кнопки під фото – центровані */
 .buttons {
   text-align: center;
   margin-top: 10px;
 }
 
-/* Стиль кнопок */
 button {
   margin: 5px;
   padding: 8px 15px;
@@ -64,7 +59,6 @@ button {
 button:hover {
   background-color: #c38fff;
 }
-/* ===== Галерея товарів ===== */
 .goods-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
