@@ -28,7 +28,7 @@ function Image() {
       <div
         id="image-container"
         style={{
-          display: "flex",          // 🔹 вирівнює в ряд
+          display: "flex",         
           alignItems: "flex-start",
           gap: "20px",
           marginLeft: "60px",
