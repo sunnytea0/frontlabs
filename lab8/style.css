@@ -1,4 +1,3 @@
-/* ======== RESET ======== */
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +19,7 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 }
-/* ======== TOP SALE BAR ======== */
+
 .top-bar {
   background-color: #2a3c48;
   padding: 14px 0;
@@ -30,20 +29,16 @@ img {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* ---- TEXT BLOCK ---- */
 .top-bar-left {
   display: flex;
   gap: 6px;
   align-items: center;
-
-  /* Відстань до таймера — помірна */
-  margin-right: 80px; /* БУЛО 70px */
+  margin-right: 80px;
 }
 
 .top-bar-label {
@@ -58,18 +53,11 @@ img {
   font-size: 16px;
 }
 
-
-/* ---- TIMER BLOCK ---- */
 .top-bar-timer {
   display: flex;
-
-  /* ✔ ПОВЕРТАЮ ПРОМІЖОК МІЖ ЦИФРАМИ */
   gap: 10px;
-
   align-items: center;
-
-
-  margin-right: 18px; /* БУЛО 8px */
+  margin-right: 18px;
 }
 
 .time-box {
@@ -89,8 +77,6 @@ img {
   color: #C1C7D9;
 }
 
-
-/* ---- LINK ---- */
 .top-bar-link {
   position: relative;
   color: #ffffff;
@@ -124,8 +110,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 120px; 
-
+  padding: 0 120px;
 }
 
 .header-left-group {
@@ -189,11 +174,6 @@ img {
   height: 100%;
 }
 
-
-
-
-/* ======== HERO SECTION ======== */
-
 .hero {
   position: relative;
   width: 100%;
@@ -203,25 +183,9 @@ img {
   align-items: center;
   padding: 0;
   margin: 0;
-
-  border-bottom: 40px solid #F5E8E1; 
+  border-bottom: 40px solid #F5E8E1;
 }
 
-/* ЛІВА затемнена частина */
-.hero::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 55%; /* тінь лише зліва, як на твоєму макеті */
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0.45) 60%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
 .hero {
   position: relative;
   width: 100%;
@@ -233,7 +197,6 @@ img {
   padding-bottom: 60px;
   background-color: #ffffff;
 }
-
 
 .hero::before {
   content: "";
@@ -300,7 +263,6 @@ img {
   text-decoration: none;
 }
 
-
 .teaching {
   background: #F5E8E1;
   padding: 50px 0 110px;
@@ -358,7 +320,6 @@ img {
   padding-bottom: 3px;
 }
 
-/* ======== PROGRAMS ======== */
 .programs {
   padding: 70px 0 90px;
   text-align: center;
@@ -406,7 +367,6 @@ img {
   object-fit: cover;
 }
 
-
 .program-body {
   padding: 26px 28px 30px 28px;
   text-align: left;
@@ -437,7 +397,6 @@ img {
   display: inline-block;
 }
 
-/* ======== RESOURCES ======== */
 .resources {
   padding: 80px 0;
   background: #e7f6f4;
@@ -498,8 +457,6 @@ img {
 }
 
 @media (max-width: 992px) {
-
-  /* HEADER */
   .header-inner {
     padding: 0 20px;
     justify-content: space-between;
@@ -522,7 +479,6 @@ img {
     gap: 20px;
   }
 
-  /* HERO */
   .hero {
     min-height: 450px;
     background-position: center;
@@ -546,7 +502,6 @@ img {
     max-width: 320px;
   }
 
-  /* TEACHING */
   .teaching-inner {
     flex-direction: column;
     gap: 40px;
@@ -566,12 +521,10 @@ img {
     font-size: 30px;
   }
 
-  /* PROGRAMS */
   .programs-grid {
     grid-template-columns: 1fr;
   }
 
-  /* RESOURCES */
   .resources {
     flex-direction: column;
   }
@@ -585,9 +538,8 @@ img {
     padding: 40px 20px;
   }
 }
-@media (max-width: 600px) {
 
-  /* HEADER */
+@media (max-width: 600px) {
   .nav {
     flex-wrap: wrap;
     gap: 14px;
@@ -610,7 +562,6 @@ img {
     gap: 10px;
   }
 
-  /* HERO */
   .hero {
     min-height: 380px;
   }
@@ -627,7 +578,6 @@ img {
     font-size: 16px;
   }
 
-  /* TEACHING */
   .teaching-text h2 {
     font-size: 24px;
   }
@@ -636,13 +586,10 @@ img {
     font-size: 15px;
   }
 
-  /* RESOURCES */
   .resources-left {
     padding: 30px 15px;
   }
 }
-
-/* ========== ESSENTIAL RESOURCES (новий точний) ========== */
 
 .resources {
   display: flex;
@@ -672,12 +619,11 @@ img {
 
 .resources-content p {
   font-size: 14px;
-  color: #7d7581; 
-  line-height: 1.7; 
+  color: #7d7581;
+  line-height: 1.7;
   margin-bottom: 15px;
 }
 
-/* КАРТКИ */
 .resource-card {
   background: #eef7f4;
   border: 1px solid #c8dad4;
@@ -701,7 +647,6 @@ img {
   color: #475655;
 }
 
-/* КРУГЛА СТРІЛКА */
 .circle-btn {
   width: 46px;
   height: 46px;
@@ -710,7 +655,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .circle-btn span {
@@ -718,7 +663,7 @@ img {
   color: #5a7b72;
   font-weight: 200;
 }
-/* ПРАВА ЧАСТИНА */
+
 .resources-right {
   width: 50%;
   display: flex;
@@ -729,6 +674,7 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
 .arrow-svg {
   width: 20px;
   height: 20px;
